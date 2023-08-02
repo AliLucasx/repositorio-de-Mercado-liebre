@@ -15,6 +15,6 @@ app.get('/a',(req,res)=>{
 
 app.use(express.static('Public'));
 
-app.listen(5000, () => {
-    console.log("servidor corriendo")
-});
+const port=process.env.PORT || 3001;
+app.listen(port, () =>console.log(`servidor corriendo en el puerto ${port}`));
+);
