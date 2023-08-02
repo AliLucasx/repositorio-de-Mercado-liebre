@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/login.css">
+</head>
+<body>
+   
+     
+    <div>
+        <form>
+            <label for="nombreApellido">Nombre y apellido:</label>
+            <input type="text" id="nombreApellido" required>
+
+            <label for="nombreUsuario">Nombre de usuari@:</label>
+            <input type="text" id="nombreUsuario" required>
+
+            <label for="fechaNacimiento">Fecha de nacimiento:</label>
+            <input type="date" id="fechaNacimiento" required>
+
+            <label for="domicilio">Domicilio:</label>
+            <input type="text" id="domicilio" required>
+            <div class="usuario">
+            <label>Perfil del usuario:</label>
+             </div>
+            <div class="perfil">
+            <input type="radio" id="comprar" name="perfil" value="comprar">
+            <label for="comprar">Comprador</label>
+            <input type="radio" id="vender" name="perfil" value="vender">
+            <label for="vender">Vendedor</label>
+             </div>
+
+            <label>Categorías de interés:</label>
+            <input type="checkbox" id="electro" name="categorias" value="electro">
+            <label for="electro">Electro</label>
+            <input type="checkbox" id="moda" name="categorias" value="moda">
+            <label for="moda">Moda</label>
+            <input type="checkbox" id="hogar" name="categorias" value="hogar">
+            <label for="hogar">Hogar</label>
+            <input type="checkbox" id="jugueteria" name="categorias" value="jugueteria">
+            <label for="jugueteria">Juguetería</label>
+            <input type="checkbox" id="vidaSana" name="categorias" value="vidaSana">
+            <label for="vidaSana">Vida sana</label>
+
+            <label for="fotoUsuario">Foto de usuario:</label>
+            <input type="file" id="fotoUsuario" accept="" required>
+
+            <label for="contrasena">Contraseña:</label>
+            <input type="password" id="contrasena" required>
+
+            <label for="confirmarContrasena">Confirmar contraseña:</label>
+            <input type="password" id="confirmarContrasena" required>
+
+            <button type="button" onclick="enviarFormulario()">Enviar</button>
+            <button type="button" onclick="borrarFormulario()">Borrar</button>
+        </form>
+        
+            <a href="/"><button>Volver</button></a>
+        
+    </div>
+
+    <script>
+        function enviarFormulario() {
+            alert("Formulario enviado correctamente.");
+        }
+
+        function borrarFormulario() {
+            alert("Formulario borrado.");
+            var formulario = document.getElementById("formulario");
+            formulario.style.display = "none";
+        }
+        
+    </script>
+    
+    <footer>
+     
+    </footer>
+
+</body>
+</html>
+
